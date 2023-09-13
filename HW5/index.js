@@ -88,18 +88,7 @@ const products = [
 // products.forEach(element => element.price = element.price * 0.85);
 // console.log(products);
 
-/*
-const resultArr = products.reduce((acc, el, i, arr) => {
-    acc[i].id = el.id;
-    acc[i].price = el.price * 0.85;
-return acc;
-}, []);
-console.log(resultArr);*/
 
-// const resultObj = arr1.reduce((acc, el, i) => {
-//     acc[el] = arr2[i];
-//     return acc;
-//   }, {});
 
 // Задание 4
 /*
@@ -154,11 +143,11 @@ const obj = {};
 for (let index = 0; index < en.length; index++) {
     obj[en[index]] = ru[index];    
 }
-console.log(obj);
+// console.log(obj);
 
 // Второй способ:
 const newObj = en.reduce((acc, el, i) => {
     acc[el] = ru[i];
     return acc;
 }, {});
-console.log(newObj);
+// console.log(newObj);
