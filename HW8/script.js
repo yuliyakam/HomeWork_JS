@@ -84,10 +84,7 @@ class Order {
     this.products.push(product);
   }
   getTotalPrice() {
-    return this.products.reduce(
-      (sum, el) => (sum += el.price * el.quantity),
-      0
-    );
+    return this.products.reduce((sum, el) => sum + el.price * el.quantity, 0);
   }
 }
 
@@ -99,4 +96,4 @@ order.addProduct(product1);
 const product2 = new Product("Headphones", 100, 1);
 order.addProduct(product2);
 
-console.log(order.getTotalPrice()); 
+console.log(order.getTotalPrice());

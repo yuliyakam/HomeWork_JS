@@ -14,7 +14,7 @@ book.displayInfo(); // "Title: BookName1, Author: Author1, Pages: 123"
 */
 
 class Book {
-    // Поля в классе можно сразу обозначить, либо как ниже прописать их в конструкторе 21 строка
+  // Поля в классе можно сразу обозначить, либо как ниже прописать их в конструкторе 21 строка
   title = "Название книги";
   author = "ФИО автора";
   pages = 0;
@@ -24,12 +24,14 @@ class Book {
     this.pages = pages;
   }
   displayInfo() {
-    console.log("Название книги - ", `"${this.title}"`, " ФИО автора - ", this.author, " Количество страниц - ", this.pages);
+    console.log(
+      `Название книги - "${this.title}"; ФИО автора - ${this.author}; Количество страниц - ${this.pages}.`
+    );
   }
 }
 
-const book = new Book("BookName1", "Author1", 123);
-book.displayInfo(); // "Title: BookName1, Author: Author1, Pages: 123"
+// const book = new Book("BookName1", "Author1", 123);
+// book.displayInfo(); // "Title: BookName1, Author: Author1, Pages: 123"
 
 /*Задание 2: "Управление списком студентов"
 Реализуйте класс Student, представляющий студента, со следующими свойствами и методами:
@@ -43,7 +45,7 @@ book.displayInfo(); // "Title: BookName1, Author: Author1, Pages: 123"
 const student = new Student("John Smith", 16, "10th grade");
 student.displayInfo(); // "Name: John Smith, Age: 16, Grade: 10th grade"
         */
-class Student { 
+class Student {
   constructor(name, age, grade) {
     this.name = name;
     this.age = age;
@@ -51,7 +53,7 @@ class Student {
   }
 
   displayInfo() {
-    console.log(" Name: ", this.name, "\n", "Age: ", this.age, "\n", "Grade: ", this.grade);
+    console.log(`Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`);
   }
 }
 

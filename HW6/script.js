@@ -18,30 +18,28 @@
 // на 1. Значение счетчика должно быть доступно только через методы объекта,
 // а не напрямую.
 //  */
-// function createCounter() {
-//   let count = 0;
-//   return {
-//     increment: function () {
-//       return count++;
-//     },
-//     decrement: function () {
-//       return count--;
-//     },
-//   };
-// }
-// const counter = createCounter();
-// // console.log(counter.increment());
-// // console.log(counter.increment());
-// // console.log(counter.increment());
-// // console.log(counter.decrement());
-// // console.log(counter.decrement());
+function createCounter() {
+  let count = 0;
+  return {
+    increment: function () {
+      count++;
+    },
+    decrement: function () {
+      count--;
+    },
+    printCount: function () {
+      return count;
+    },
+  };
+}
+const counter = createCounter();
+
+counter.increment();
+console.log(counter.printCount()); //1
+counter.increment();
+console.log(counter.printCount()); //2
+
+counter.decrement();
+console.log(counter.printCount()); //1
 
 // // console.log(counter.count);// undefined т.к Значение счетчика доступно только через методы объекта
-
-// /**
-//  *
-//  */
-
-
-
-
