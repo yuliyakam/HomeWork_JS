@@ -42,7 +42,7 @@ const musicCollection = {
     for (const colection of this.albumColection) {
         yield colection;
     }
-}
+ }
 };
 for (const album of musicCollection) {
     console.log(`Название альбома ${album.title} - Исполнитель ${album.artist} (Год выпуска ${album.year})`);
