@@ -87,9 +87,9 @@ divEl.innerHTML = initialData
     cols="30"
     rows="10"
     class="user-input"
-  ></textarea>
-  <button class="add-button">Add a review</button>
+  ></textarea>  
 </form>
+<button class="add-button">Add a review</button>
 </div>`
   )
   .join("");
@@ -98,16 +98,20 @@ const textareaEl = document.querySelector(".user-input");
 const divErrEl = document.querySelector(".error-message");
 const ulEl = document.querySelector(".item-list");
 
-btnEl.addEventListener("click", () => {
+btnEl.addEventListener("click", (event) => {
   try {
     if (textareaEl.value.length < 5 || textareaEl.value.length > 15) {
       throw new Error("Длина введенного значения не соответствует требованиям");
     }
     const liEl = document.createElement("li");
     liEl.textContent = `${createId()}  ${textareaEl.value}`;
-    ulEl.append( liEl);
+    
+    if (event.target.parentNode === ulEl.parentNode) {
+      ulEl.append( liEl);
+    }
+    
     //Проверить к какому товару добавляется отзыв, т.е если Узел textarea совпадает с кнопкой то добавляем отзыв в хранилище к конкретному товару
-  
+    // ulEl.append( liEl);
     textareaEl.value = "";
     divErrEl.textContent = "";
   } catch (error) {
