@@ -1,0 +1,40 @@
+<!-- Вашей задачей является создание веб-слайдера для отображения изображений на веб-странице. Слайдер должен позволять переключаться между изображениями и отображать их в центре экрана.
+
+1. Создайте интерфейс веб-страницы, который включает в себя следующие элементы:
+
+a. Контейнер для отображения текущего изображения.
+b. Кнопки "Предыдущее изображение" и "Следующее изображение" для переключения между изображениями.
+c. Навигационные точки (индикаторы) для быстрого переключения между изображениями.
+
+2. Используйте HTML для создания элементов интерфейса.
+
+
+
+5. Добавьте стилизацию для слайдера и элементов интерфейса с использованием CSS для улучшения внешнего вида. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Hello, Slider!!!</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="photo1.jpg" alt="photo" />
+        <img src="photo2.jpg" alt="photo" />
+        <img src="photo3.jpg" alt="photo" />
+      </div>
+      <button class="prev-button">&lt;</button>
+      <button class="next-button">&gt</button>
+      <div class="buttons">
+        <div class="btn-dot active"></div>
+        <div class="btn-dot"></div>
+        <div class="btn-dot"></div>
+      </div>
+    </div>
+  </body>
+</html>
