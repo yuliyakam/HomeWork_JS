@@ -1,6 +1,6 @@
 "use strict";
-
-const KEY = "B3ufbb5TWS6NbJFv9ZSKZ7kysJCPuAbD6cgpcCmo42Q";
+//Add your key in Unsplash!!!
+const KEY = "";
 
 const divEl = document.querySelector(".photoBox");
 const divImg = document.querySelector(".img");
