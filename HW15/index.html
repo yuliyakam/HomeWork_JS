@@ -1,0 +1,29 @@
+<!-- Цель: Разработать веб-приложение, которое каждый день будет отображать новое случайное изображение из коллекции Unsplash, давая пользователю возможность узнать больше о фотографе и сделать "лайк" изображению.
+Разработка веб-приложения:
+• Создайте HTML-страницу с элементами: изображение, имя фотографа, кнопка "лайк", при нажатии на которую подсвечивается "лайкнутый" элемент -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/21222e19e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Work with Unsplash</title>
+  </head>
+  <body>
+    <div class="photoBox">
+      <div class="img">
+        <img class="newPhoto" src="" alt="new photo" />
+        <i class="fa-regular fa-heart likeBtn" style="color: #d6e929"></i>
+      </div>
+      <h2 class="autorPhotoName">Autors name</h2>
+      <button class="loadBtn">Load new photo</button>
+      <p class="message"></p>
+    </div>
+  </body>
+</html>
